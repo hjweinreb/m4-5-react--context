@@ -12,7 +12,7 @@ function App(props) {
   const { numCookies, setNumCookies, cookiesPerSecond } = React.useContext(
     GameContext
   );
-
+    
   useInterval(() => {
     setNumCookies(numCookies + cookiesPerSecond);
   }, 1000);
